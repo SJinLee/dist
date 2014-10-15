@@ -1,0 +1,24 @@
+adjgamma.o: adjgamma.cpp Masek.h global.h
+canny.o: canny.cpp Masek.h global.h
+circlecoordinates.o: circlecoordinates.cpp Masek.h global.h
+createiristemplate.o: createiristemplate.cpp Masek.h global.h
+encode.o: encode.cpp Masek.h global.h
+findcircle.o: findcircle.cpp Masek.h global.h
+findline.o: findline.cpp Masek.h global.h
+gaborconvolve.o: gaborconvolve.cpp Masek.h global.h
+gauss.o: gauss.cpp Masek.h global.h
+gethammingdistance.o: gethammingdistance.cpp Masek.h global.h
+houcircle.o: houcircle.cpp Masek.h global.h
+hysthresh.o: hysthresh.cpp Masek.h global.h
+imread.o: imread.cpp imread.h Masek.h global.h
+imwrite.o: imwrite.cpp imread.h Masek.h global.h
+interp2.o: interp2.cpp Masek.h global.h
+linecoords.o: linecoords.cpp Masek.h global.h
+mymat.o: mymat.cpp Masek.h global.h
+nonmaxsup.o: nonmaxsup.cpp Masek.h global.h
+normalizeiris.o: normalizeiris.cpp Masek.h global.h
+radon.o: radon.cpp Masek.h global.h
+saveiristemplate.o: saveiristemplate.cpp Masek.h global.h
+segmentiris.o: segmentiris.cpp Masek.h global.h
+shiftbits.o: shiftbits.cpp Masek.h global.h
+utility.o: utility.cpp Masek.h global.h

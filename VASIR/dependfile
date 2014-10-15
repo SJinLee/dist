@@ -1,0 +1,45 @@
+AlignLRPupilPos.o: AlignLRPupilPos.cpp AlignLRPupilPos.h ImageUtility.h \
+ ../MasekAlg/Masek.h ../MasekAlg/global.h FindPupilCircleNew.h
+CreateTemplate.o: CreateTemplate.cpp CreateTemplate.h ../MasekAlg/Masek.h \
+ ../MasekAlg/global.h EncodeLee.h ImageUtility.h FindPupilCircleNew.h \
+ FindIrisCircle.h FindHighLights.h FindEyelidCurve.h Normalization.h
+EdgeDensity.o: EdgeDensity.cpp ImageQuality.h ImageUtility.h \
+ ../MasekAlg/Masek.h ../MasekAlg/global.h
+EncodeLee.o: EncodeLee.cpp EncodeLee.h ../MasekAlg/Masek.h \
+ ../MasekAlg/global.h ImageUtility.h
+EyeDetection.o: EyeDetection.cpp EyeDetection.h ImageUtility.h \
+ ../MasekAlg/Masek.h ../MasekAlg/global.h
+EyeRegionExtraction.o: EyeRegionExtraction.cpp EyeRegionExtraction.h \
+ ImageUtility.h ../MasekAlg/Masek.h ../MasekAlg/global.h \
+ AlignLRPupilPos.h FindPupilCircleNew.h
+FindEyelidCurve.o: FindEyelidCurve.cpp FindEyelidCurve.h ImageUtility.h \
+ ../MasekAlg/Masek.h ../MasekAlg/global.h ImageQuality.h
+FindHighLights.o: FindHighLights.cpp FindHighLights.h ../MasekAlg/Masek.h \
+ ../MasekAlg/global.h ImageUtility.h
+FindIrisCircle.o: FindIrisCircle.cpp FindIrisCircle.h ../MasekAlg/Masek.h \
+ ../MasekAlg/global.h ImageUtility.h
+FindPupilCircleNew.o: FindPupilCircleNew.cpp FindPupilCircleNew.h \
+ ImageUtility.h ../MasekAlg/Masek.h ../MasekAlg/global.h ImageQuality.h
+FindTwoPupilCircles.o: FindTwoPupilCircles.cpp FindPupilCircleNew.h \
+ ImageUtility.h ../MasekAlg/Masek.h ../MasekAlg/global.h
+GaborConvolve.o: GaborConvolve.cpp EncodeLee.h ../MasekAlg/Masek.h \
+ ../MasekAlg/global.h
+GetHammingDistance.o: GetHammingDistance.cpp GetHammingDistance.h \
+ MatchingTemplate.h ImageUtility.h ../MasekAlg/Masek.h \
+ ../MasekAlg/global.h Shifts.h
+ImageQuality.o: ImageQuality.cpp ImageQuality.h ImageUtility.h \
+ ../MasekAlg/Masek.h ../MasekAlg/global.h
+ImageUtility.o: ImageUtility.cpp ImageUtility.h ../MasekAlg/Masek.h \
+ ../MasekAlg/global.h
+MasekLee.o: MasekLee.cpp MasekLee.h ../MasekAlg/Masek.h \
+ ../MasekAlg/global.h
+MatchAlg.o: MatchAlg.cpp MatchAlg.h ImageUtility.h ../MasekAlg/Masek.h \
+ ../MasekAlg/global.h MatchingTemplate.h GetHammingDistance.h
+MatchingTemplate.o: MatchingTemplate.cpp MatchingTemplate.h \
+ ImageUtility.h ../MasekAlg/Masek.h ../MasekAlg/global.h CreateTemplate.h
+Normalization.o: Normalization.cpp Normalization.h ../MasekAlg/Masek.h \
+ ../MasekAlg/global.h
+Shifts.o: Shifts.cpp Shifts.h ImageUtility.h ../MasekAlg/Masek.h \
+ ../MasekAlg/global.h
+test.o: test.cpp test.h ../MasekAlg/Masek.h ../MasekAlg/global.h \
+ CreateTemplate.h
