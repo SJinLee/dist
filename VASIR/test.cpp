@@ -28,4 +28,3 @@ printf("%d,%d\n",width,height);
   return res;
 }
 
-
