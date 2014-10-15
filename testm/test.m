@@ -1,7 +1,7 @@
 %% Init
 addpath('../VASIR')
 addpath('/usr/local/lib') %opencv
-dirname = '../../ICE/Left/'
+dirname = '../../ICE/Left/';
 files = dir([dirname '*.bmp']);
 
 %% How to draw Iris images
@@ -60,10 +60,20 @@ title(files(n).name);
 
 unloadlibrary 'libvasir'
 
-%% Function List
+%% Create templates
 % 
-% loadlibrary('libvasir','test.h')
-% libfunctionsview libvasir
-% unloadlibrary 'libvasir'
+loadlibrary('libvasir','test.h')
 
+t1 = cell(length(files),1);
+m1 = cell(length(files),1);
+for n = 1:length(files) 
+    [t,name2] = calllib('libvasir', 'createTemplate2', [dirname files(n).name]);
+    reshape(t.Value.template1,t.Value.hsize(2),t.Value.hsize(1));
+    t1{n,1} = transpose(t.Value.template1);
+    reshape(t.Value.mask,t.Value.hsize(2),t.Value.hsize(1));
+    m1{n,1} = transpose(t.Value.mask);
+    clear t;
+    fprintf('%d\n', n);
+end
 
+unloadlibrary 'libvasir'
