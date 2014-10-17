@@ -1,0 +1,13 @@
+How to build
+1. cd MasecAlg; make; cd ..
+2. cd VASIR; make; sudo /sbin/ldconfig `pwd`; cd ..
+3. cd testc; ./a.sh; cd ..
+
+For matlab test:
+1. Install ICE2005 image data in ../ICE <-- download from nist
+2. run matlab and see test?.m in the directory testm
+  test1.m: test shared library(read image and make template)
+  test2.m: draw a template
+  test3.m: calculate a distance
+  test4.m: make matrix of distances
+  test5.m: roc curve
