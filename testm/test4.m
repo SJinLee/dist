@@ -1,8 +1,8 @@
 %% calculate HD distance matrix
 load t1.mat
 
+t = cputime;
 n = length(t1);
-
 hd = zeros(n*(n-1)/2,1,'double');
 count = 1;
 for i = 1:(n-1)
@@ -14,3 +14,4 @@ for i = 1:(n-1)
 end
         
 save('hd.mat','hd');
+fprintf('elapsed time=%f\n',cputime-t);
