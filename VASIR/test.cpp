@@ -12,6 +12,13 @@ LIBFOO_DLL_EXPORTED struct image2* readimage(const char * name)
   return (struct image2*)img;
 }
 
+/*	ICE2005_IRIS_LG2200             01 (CODE: ICE)
+        MBGC_IRIS_LG2200                02 (CODE: MIL)
+        MBGC_FACE_IOM                   03 (CODE: MFI)
+        ND_IRIS20_LG4000                04 (CODE: N20)
+        ND_IRIS48_LGICAM                05 (CODE: N48)
+        ND_IRIS49_IRISGUARD             06 (CODE: N49)
+        ND_IRIS59_CFAIRS                07 (CODE: N59)*/
 LIBFOO_DLL_EXPORTED struct templ* createTemplate2(const char* filename)
 {
   int *template1=NULL;

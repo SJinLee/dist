@@ -10,7 +10,7 @@ SRC = adjgamma.cpp canny.cpp circlecoordinates.cpp createiristemplate.cpp \
 
 OBJ = $(SRC:%.cpp=%.o)
 
-CFLAGS = -fpic
+CFLAGS = -fpic -march=native -O2
 
 LIB = -lc
 

@@ -11,7 +11,8 @@ SRC = AlignLRPupilPos.cpp CreateTemplate.cpp EdgeDensity.cpp \
 
 OBJ = $(SRC:%.cpp=%.o)
 
-CFLAGS = -I ../MasekAlg -fPIC -DBUILDING_LIBFOO -DHAVE_VISIBILITY
+CFLAGS = -fPIC -march=native -O2 \
+         -I ../MasekAlg -DBUILDING_LIBFOO -DHAVE_VISIBILITY
 
 LIB = -fvisibility=hidden -lc -L ../MasekAlg -lmasekalg -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
 
